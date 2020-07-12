@@ -1,0 +1,133 @@
+.App {
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    flex-direction: column;
+    padding: 5vh 5vw;
+}
+
+.tasksHeader {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px
+}
+
+.headerText {
+    font-size: 30px;
+    color: #00b074;
+}
+
+.inputTaskContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: max-content;
+}
+
+.taskInput {
+    text-align: center;
+    padding: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    width: 400px;
+}
+
+.createTaskButton {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b074;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.tasksTable {
+    display: flex;
+    border: 3px solid darkgrey;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+.tasksTableHeader {
+    display: flex;
+    background-color: lightgrey;
+    flex-direction: row-reverse;
+    border-bottom: 2px solid darkgray;
+    padding: 8px 15px;
+}
+
+.tasksTableColumnCompleted {
+    text-align: right;
+    flex-basis: 10%;
+}
+
+.tasksTableColumnDescription {
+    text-align: right;
+    flex-basis: 50%;
+}
+
+.tasksTableColumnCreationDate {
+    text-align: right;
+    flex-basis: 20%;
+}
+
+.tasksTableColumnActions {
+    text-align: right;
+    flex-basis: 20%;
+}
+
+.tasksTableRow {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 8px 15px;
+}
+
+.taskCompleted {
+    text-align: right;
+    flex-basis: 10%;
+}
+
+.taskDescription {
+    text-align: right;
+    flex-basis: 50%;
+}
+
+.taskCreationDate {
+    text-align: right;
+    flex-basis: 20%;
+}
+
+.taskActions {
+    text-align: right;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.updateTaskButton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.deleteTaskButton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.tasksTableEmpty {
+    text-align: center;
+    padding: 20px;
+}
